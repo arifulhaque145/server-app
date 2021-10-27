@@ -32,6 +32,10 @@ client.connect((err) => {
   //   client.close();
 });
 
+app.get("/", async (req, res) => {
+  res.send('This is your server');
+});
+
 app.listen(port, () => {
   console.log("Running server on ports", port);
 });
